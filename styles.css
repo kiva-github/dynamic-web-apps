@@ -1,3 +1,5 @@
+/* project-wide */
+
 * {
     box-sizing: border-box;
 }
@@ -12,6 +14,8 @@ h4 {
     margin: 0;
 }
 
+/* header */
+
 header {
     background-color: #85C4FF;
     padding: 40px;
@@ -24,16 +28,11 @@ header nav {
     justify-content: center;
 }
 
-header nav a {
-}
+/* sections */
 
 section.section {
     margin: 0;
     padding: 40px;
-}
-
-section.box-model-section {
-    background-color: #CFF1CA;
 }
 
 .interior {
@@ -66,14 +65,124 @@ section.box-model-section {
     line-height: 1.5;
 }
 
+/* box-model section */
+
+.box-model-section {
+    background-color: #CFF1CA;
+}
+
 .box-model-interior {
     background-color: #9EF490;
     border-color: #187908;
     min-height: 600px;
 }
 
-.flex-box-interior {
-    background-color: #FF9371;
-    border-color: #7D260B;
+/* flex-box section */
+
+.flex-box-section {
+    background-color: #F1D3CA
 }
+
+.flex-box-interior {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-box-interior > div {
+    background-color: #FF9371;
+    border: 10px solid #7D260B;
+}
+
+.flex-box-interior--top {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+    padding: 32px;
+}
+
+.flex-box-interior--top > div {
+    align-items: center;
+    background-color: #FFECE5;
+    border: 5px solid #DD4414;
+    display: flex;
+    height: 170px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 825px;
+    width: 100%;
+}
+
+.flex-box-interior--top > div > h1 {
+    margin: 0;
+}
+
+.flex-box-interior--row,
+.flex-box-interior--col {
+    display: flex;
+    flex-basis: 48%;
+    height: 324px;
+    padding: 20px;
+}
+
+.flex-box-interior--row > div,
+.flex-box-interior--col > div {
+    background-color: #FFECE5;
+    border: 5px solid #DD4414;
+    flex-basis: 33%;
+}
+
+.flex-box-interior--row > div {
+    margin-right: 10px;
+}
+
+.flex-box-interior--col > div {
+    margin-bottom: 20px;
+}
+
+.flex-box-interior--col {
+    flex-direction: column;
+}
+
+.interior-flex---row > div:last-of-type,
+.interior-flex---row > div:last-of-type {
+    margin: 0;
+}
+
+
+/* headings section */
+
+.heading-usage-section {
+    background-color: #F1CAF0;
+}
+
+.heading-usage-section h1, h2, h3, h4, p {
+    font-weight: 700;
+    height: 92px;
+}
+
+.heading-usage-section h1, h3 {
+    color: #6C0468;
+    font-size: 64px;
+    line-height: 74px;
+}
+
+.heading-usage-section h2 {
+    color: #6C0468;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.heading-usage-section p {
+    color: #3A0F39;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.heading-usage-section h4 {
+    color: #6C0468;
+    font-size: 36px;
+    line-height: 41px;
+}
+
 
