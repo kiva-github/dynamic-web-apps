@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <a>Box Model</a>
-            <a>Flexbox</a>
-            <a>Positioning</a>
-            <a>Heading Usage</a>
-            <a>Simple JavaScript</a>
+            <a href="#box-model">Box Model</a>
+            <a href="#flex-box">Flexbox</a>
+            <a href="#positioning-section">Positioning</a>
+            <a href="#heading-usage">Heading Usage</a>
+            <a href="#simple-javascript">Simple JavaScript</a>
         </nav>
     </header>
 
     <main>
         <section id="box-model" class="box-model-section section">
-            <div class="box-model-interior interior">
+            <div class="interior">
                 <h1>CSS Box Model</h1>
                 <h2>/* Padding is inside of the element in CSS */</h2>
                 <p>padding: 40px;</p>
@@ -30,8 +31,9 @@
                 <p>border: 10px solid green;</p>
             </div>
         </section>
+        
         <section id="flex-box" class="flex-box-section section">
-            <div class="flex-box-interior interior">
+            <div class="interior">
                 <div class="flex-box-interior--top">
                     <div>
                         <h1>display: flex</h1>
@@ -48,9 +50,19 @@
                     <div></div>
                 </div>
             </div>
-
         </section>
-        <section id="positioning-section" class="positioning-section section"></section>
+
+        <section id="positioning-section" class="positioning-section section">
+            <div class="interior">
+                <h1>Positioning <br> Elements</h1>
+                <div class="circle circle-one"></div>
+                <div class="circle circle-two" style="right: 48px; top: 34px;"></div>
+                <div class="circle" style="right: 186px; bottom: 143px;"></div>
+                <div class="square" style="right: 510px; bottom: 204px;"></div>
+                <div class="square" style="right: 56px; bottom: 48px"></div>
+            </div>
+        </section>
+
         <section id="heading-usage" class="heading-usage-section section">
             <h1>Proper Heading Usage (h1)</h1>
             <h2>A heading describes the content below it (h2)</h2>
@@ -58,12 +70,20 @@
             <p>Here is a paragraph about why text-size does not affect the order of the headings. We want to consider the hierarchy of the information and not the styling for determining which tag we choose. (p)</p>
             <h4>This could be another heading about text size</h4>
             <p>And you could put another paragraph (or two, or three...) under this further describing this concept (p)</p>
-
         </section>
-        <section id="simple-javascript" class="simple-javascript-section section"></section>
+        <section id="simple-javascript" class="simple-javascript-section section">
+            <h1>Simple JavaScript</h1>
+            <div class="counter-items">
+                <h2 id="count">0</h2>
+                <button onClick="increaseCount()">Click to increase</button>
+            </div>
+            
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>Kiva Loor - Fall, 2022</p>
+    </footer>
     
 </body>
 </html>
